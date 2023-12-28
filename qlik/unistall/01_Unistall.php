@@ -167,3 +167,4 @@ SDK::deleteLanguageEntry('Settings', 'en_us', 'LBL_QLIKIFRAME_CONF_QRSCertkeyfil
 
 SDK::deleteLanguageEntry('Settings', 'it_it', 'LBL_QLIKIFRAME_DESCRIPTION' );
 SDK::deleteLanguageEntry('Settings', 'en_us', 'LBL_QLIKIFRAME_DESCRIPTION' );
+
