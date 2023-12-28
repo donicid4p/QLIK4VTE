@@ -1,0 +1,5 @@
+# esqogito_eiframe
+<FilesMatch "\.(pem)">
+  Order deny,allow
+  Deny from all
+</FilesMatch>

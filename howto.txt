@@ -1,0 +1,11 @@
+qlik - /modules/SDK/
+QlikIframe_mod - /modules (rinominare in QlikIframe)
+QLikIframe_settings - /modules/Settings (rinominare in QlikIframe)
+QlikIframe_tpl - /Smarty/templates (rinominare in QlikIframe)
+QlikProxy - /
+QlikIframe.php - /modules/Settings
+
+*.png - /themes/images
+theme.php - /themes/next22
+*.tpl - /Smart/templates
+style.css - /themes/next22
