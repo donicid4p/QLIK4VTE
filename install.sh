@@ -8,26 +8,25 @@ root_dir="$input_string"
 
 echo "Root directory: $root_dir"
 
-# fai un unzip del file QLIK4VTE.zip
-unzip QLIK4VTE.zip
+
 
 # tutti i file di tipo png li copio nella cartella root_dir/themes/images
 find . -name "*.png" -exec cp {} "$root_dir/themes/images" \;
 
-# se il file root_dir/themes/next22+/style.css esiste, allora lo rinomino in style.css.old
-if [ -f "$root_dir/themes/next22+/style.css" ]; then
-    mv "$root_dir/themes/next22+/style.css" "$root_dir/themes/next22+/style.css.old"
+# se il file root_dir/themes/next22/style.css esiste, allora lo rinomino in style.css.old
+if [ -f "$root_dir/themes/next22/style.css" ]; then
+    mv "$root_dir/themes/next22/style.css" "$root_dir/themes/next22/style.css.old"
 fi
 
-# copio il file style.css in root_dir/themes/next22+/style.css
-cp style.css "$root_dir/themes/next22+/style.css"
+# copio il file style.css in root_dir/themes/next22/style.css
+cp style.css "$root_dir/themes/next22/style.css"
 
 # stesso procedimento per il file theme.php
-if [ -f "$root_dir/themes/next22+/theme.php" ]; then
-    mv "$root_dir/themes/next22+/theme.php" "$root_dir/themes/next22+/theme.php.old"
+if [ -f "$root_dir/themes/next22/theme.php" ]; then
+    mv "$root_dir/themes/next22/theme.php" "$root_dir/themes/next22/theme.php.old"
 fi
 
-cp theme.php "$root_dir/themes/next22+/theme.php"
+cp theme.php "$root_dir/themes/next22/theme.php"
 
 # per ogni file .tpl, verifico che esista in root_dir/Smarty/templates e se esiste lo rinomino in .tpl.old
 for file in *.tpl; do
