@@ -37,24 +37,23 @@ for file in *.tpl; do
 done
 
 # la cartella QlikProxy la copio in root_dir/
-cp -r QlikProxy "$root_dir/"
+cp -r /var/www/QLIK4VTE/QlikProxy "$root_dir/"
 
 # rinomina la dir QlikIframe_mod in QlikIframe e copiala in root_dir/modules
-mv  QlikIframe_mod QlikIframe
-cp -r QlikIframe "$root_dir/modules/"
-mv  QlikIframe_mod QlikIframe
+mv  /var/www/QLIK4VTE/QlikIframe_mod /var/www/QLIK4VTE/QlikIframe
+cp  -r /var/www/QLIK4VTE/QlikIframe "$root_dir/modules/"
+mv  /var/www/QLIK4VTE/QlikIframe /var/www/QLIK4VTE/QlikIframe_mod
 
-mv   QLikIframe_settings QlikIframe
-cp -r QlikIframe "$root_dir/modules/Settings/"
-mv  QlikIframe_settings QlikIframe
+mv  /var/www/QLIK4VTE/QlikIframe_sett /var/www/QLIK4VTE/QlikIframe
+cp -r /var/www/QLIK4VTE/QlikIframe "$root_dir/modules/Settings/"
+mv  /var/www/QLIK4VTE/QlikIframe /var/www/QLIK4VTE/QlikIframe_sett
 
-mv  QLikIframe_tpl QlikIframe
-cp -r QlikIframe "$root_dir/Smarty/templates/"
-mv  QlikIframe_tpl QlikIframe
+mv  /var/www/QLIK4VTE/QLikIframe_tpl /var/www/QLIK4VTE/QlikIframe
+cp -r /var/www/QLIK4VTE/QlikIframe "$root_dir/Smarty/templates/"
+mv  /var/www/QLIK4VTE/QlikIframe /var/www/QLIK4VTE/QlikIframe_tpl
 
-cp -r qlik "$root_dir/modules/SDK/"
+cp -r /var/www/QLIK4VTE/qlik "$root_dir/modules/SDK/"
 
-cp QlikIframe.php "$root_dir/modules/Settings/"
+cp /var/www/QLIK4VTE/QlikIframe.php "$root_dir/modules/Settings/"
 
-cp QlikIframe.js "$root_dir/modules/Settings/resources/QlikIframe.js"
-
+cp /var/www/QLIK4VTE/QlikIframe.js "$root_dir/modules/Settings/resources/QlikIframe.js"
