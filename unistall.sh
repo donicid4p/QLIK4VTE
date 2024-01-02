@@ -8,17 +8,28 @@ root_dir="$input_string"
 
 echo "Root directory: $root_dir"
 
-#array con i nomi dei file da rimuovere
-declare -a files=("QlikIframe.php" "logo_qlikvte.png" "vteQlik20x20.png" "vteQlik50x50_Color.png" "vteQlik50x50.png")
-#per ogni file nell'array
-for file in "${files[@]}"; do
-    #se il file esiste
-    if [ -f "$root_dir/themes/images/$file" ]; then
-        #rimuovilo
-        rm "$root_dir/themes/images/$file"
-    fi
-done
 
+ #se il file esiste
+if [ -f "$root_dir/themes/images/QlikIframe.php" ]; then
+        #rimuovilo
+        rm "$root_dir/themes/images/QlikIframe.php"
+fi
+if [ -f "$root_dir/themes/images/logo_qlikvte.png" ]; then
+        #rimuovilo
+        rm "$root_dir/themes/images/logo_qlikvte.png"
+fi
+if [ -f "$root_dir/themes/images/vteQlik20x20.png" ]; then
+        #rimuovilo
+        rm "$root_dir/themes/images/vteQlik20x20.png"
+fi
+if [ -f "$root_dir/themes/images/vteQlik50x50_Color.png" ]; then
+        #rimuovilo
+        rm "$root_dir/themes/images/vteQlik50x50_Color.png"
+fi
+if [ -f "$root_dir/themes/images/vteQlik50x50.pngg" ]; then
+        #rimuovilo
+        rm "$root_dir/themes/images/vteQlik50x50.png"
+fi
 # Ripristina il file originale style.css se esiste
 if [ -f "$root_dir/themes/next22/style.css.old" ]; then
     mv "$root_dir/themes/next22/style.css.old" "$root_dir/themes/next22/style.css"
@@ -36,14 +47,17 @@ fi
 #rm "$root_dir/themes/next22/theme.php"
 #array con i nomi dei file da rimuovere
 declare -a files=("DetailViewUI" "EditViewUI")
-#per ogni file nell'array
-for file in "${files[@]}"; do
-    #se il file esiste
-    if [ -f "$root_dir/themes/images/$file" ]; then
+
+if [ -f "$root_dir/themes/images/DetailViewUI.old.tpl" ]; then
         #rimetti l'originale
-        mv "$root_dir/Smarty/templates/$file.old.tpl" "$root_dir/Smarty/templates/$file.tpl"
-    fi
-done
+        mv "$root_dir/Smarty/templates/DetailViewUI.old.tpl" "$root_dir/Smarty/templates/DetailViewUI.tpl"
+fi
+
+if [ -f "$root_dir/themes/images/EditViewUI.old.tpl" ]; then
+        #rimetti l'originale
+        mv "$root_dir/Smarty/templates/EditViewUI.old.tpl" "$root_dir/Smarty/templates/EditViewUI.tpl"
+fi
+
 
 # Rimuovi la cartella QlikProxy da root_dir/
 rm -r "$root_dir/QlikProxy"
