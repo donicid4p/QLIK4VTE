@@ -48,7 +48,7 @@ mv  /var/www/QLIK4VTE/QlikIframe_sett /var/www/QLIK4VTE/QlikIframe
 cp -r /var/www/QLIK4VTE/QlikIframe "$root_dir/modules/Settings/"
 mv  /var/www/QLIK4VTE/QlikIframe /var/www/QLIK4VTE/QlikIframe_sett
 
-mv  /var/www/QLIK4VTE/QLikIframe_tpl /var/www/QLIK4VTE/QlikIframe
+mv  /var/www/QLIK4VTE/QlikIframe_tpl /var/www/QLIK4VTE/QlikIframe
 cp -r /var/www/QLIK4VTE/QlikIframe "$root_dir/Smarty/templates/"
 mv  /var/www/QLIK4VTE/QlikIframe /var/www/QLIK4VTE/QlikIframe_tpl
 
