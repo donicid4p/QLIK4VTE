@@ -43,10 +43,8 @@ if [ -f "$root_dir/themes/next22/theme.php.old" ]; then
     mv "$root_dir/themes/next22/theme.php.old" "$root_dir/themes/next22/theme.php"
 fi
 
-# Rimuovi il file theme.php copiato precedentemente
-#rm "$root_dir/themes/next22/theme.php"
-#array con i nomi dei file da rimuovere
-declare -a files=("DetailViewUI" "EditViewUI")
+
+
 
 if [ -f "$root_dir/themes/images/DetailViewUI.old.tpl" ]; then
         #rimetti l'originale
