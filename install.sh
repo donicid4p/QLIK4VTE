@@ -40,9 +40,9 @@ done
 cp -r /var/www/QLIK4VTE/QlikProxy "$root_dir/"
 
 # rinomina la dir QlikIframe_mod in QlikIframe e copiala in root_dir/modules
-mv  /var/www/QLIK4VTE/QlikIframe_mod /var/www/QLIK4VTE/QlikIframe
+mv  /var/www/QLIK4VTE/QlikIframe_mods /var/www/QLIK4VTE/QlikIframe
 cp  -r /var/www/QLIK4VTE/QlikIframe "$root_dir/modules/"
-mv  /var/www/QLIK4VTE/QlikIframe /var/www/QLIK4VTE/QlikIframe_mod
+mv  /var/www/QLIK4VTE/QlikIframe /var/www/QLIK4VTE/QlikIframe_mods
 
 mv  /var/www/QLIK4VTE/QlikIframe_sett /var/www/QLIK4VTE/QlikIframe
 cp -r /var/www/QLIK4VTE/QlikIframe "$root_dir/modules/Settings/"
