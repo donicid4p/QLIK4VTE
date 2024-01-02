@@ -40,17 +40,17 @@ done
 cp -r QlikProxy "$root_dir/"
 
 # rinomina la dir QlikIframe_mod in QlikIframe e copiala in root_dir/modules
-mv QlikIframe_mod QlikIframe
+mv -r QlikIframe_mod QlikIframe
 cp -r QlikIframe "$root_dir/modules/"
-mv QlikIframe_mod QlikIframe
+mv -r QlikIframe_mod QlikIframe
 
-mv QLikIframe_settings QlikIframe
+mv-r  QLikIframe_settings QlikIframe
 cp -r QlikIframe "$root_dir/modules/Settings/"
-mv QlikIframe_settings QlikIframe
+mv -r QlikIframe_settings QlikIframe
 
-mv QLikIframe_tpl QlikIframe
+mv -r QLikIframe_tpl QlikIframe
 cp -r QlikIframe "$root_dir/Smarty/templates/"
-mv QlikIframe_tpl QlikIframe
+mv -r QlikIframe_tpl QlikIframe
 
 cp -r qlik "$root_dir/modules/SDK/"
 
