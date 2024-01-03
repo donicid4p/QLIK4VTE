@@ -53,17 +53,17 @@ fi
 
 
 
-if [ -f "$root_dir/Smarty/templates/DetailViewUI.old.tpl" ]; then
+if [ -f "$root_dir/Smarty/templates/DetailViewUI.tpl.old" ]; then
         #rimetti l'originale
         rm "$root_dir/Smarty/templates/DetailViewUI.tpl"
-        mv "$root_dir/Smarty/templates/DetailViewUI.old.tpl" "$root_dir/Smarty/templates/DetailViewUI.tpl"
+        mv "$root_dir/Smarty/templates/DetailViewUI.tpl.old" "$root_dir/Smarty/templates/DetailViewUI.tpl"
         echo "$root_dir/Smarty/templates/DetailViewUI.tpl Restored"
 fi
 
-if [ -f "$root_dir/Smarty/templates/EditViewUI.old.tpl" ]; then
+if [ -f "$root_dir/Smarty/templates/EditViewUI.tpl.old" ]; then
         #rimetti l'originale
         rm "$root_dir/Smarty/templates/EditViewUI.tpl"
-        mv "$root_dir/Smarty/templates/EditViewUI.old.tpl" "$root_dir/Smarty/templates/EditViewUI.tpl"
+        mv "$root_dir/Smarty/templates/EditViewUI.tpl.old" "$root_dir/Smarty/templates/EditViewUI.tpl"
         echo "$root_dir/Smarty/templates/EditViewUI.tpl Restored"
 fi
 
