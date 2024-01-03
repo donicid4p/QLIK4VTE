@@ -4,6 +4,8 @@ include_once('../../../../config.inc.php');
 chdir($root_directory);
 require_once('include/utils/utils.php');
 include_once('vtlib/Vtiger/Module.php');
+		require_once('vtlib/Vtiger/SettingsBlock.php');
+		require_once('vtlib/Vtiger/SettingsField.php');
 $Vtiger_Utils_Log = true;
 
 session_start();
