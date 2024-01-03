@@ -29,6 +29,7 @@ $user_block = Vtiger_Block::getInstance('LBL_USER_SENSE_OPTIONS', $moduleInstanc
 if($user_block) {
     $user_block->delete();
 }
+Vtiger_Link::deleteLink('HEADERSCRIPT', 'QlikIframe', $url='modules/SDK/qlik/src/QlikIframe.js');
 
 $moduleInstance=Vtecrm_Module::getInstance('QlikIframe');
 if($moduleInstance) {
