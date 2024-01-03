@@ -581,5 +581,5 @@ SDK::setLanguageEntries('QlikIframe', 'LBL_TIP_URI',array('it_it'=>'SE il campo 
 
 SDK::setLanguageEntries('QlikIframe', 'Altro',array('it_it'=>'Altro',
 		'en_us'=>'Other'));
-echo " \n\r RICORDA di AGGIUNGERE la VARIABILE \$qlik_proxy_url NEL FILE config.inc.php!!!!! ";
+//echo " \n\r RICORDA di AGGIUNGERE la VARIABILE \$qlik_proxy_url NEL FILE config.inc.php!!!!! ";
 ?>
