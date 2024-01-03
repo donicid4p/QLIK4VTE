@@ -46,12 +46,12 @@ fi
 
 
 
-if [ -f "$root_dir/themes/images/DetailViewUI.old.tpl" ]; then
+if [ -f "$root_dir/Smarty/templates/DetailViewUI.old.tpl" ]; then
         #rimetti l'originale
         mv "$root_dir/Smarty/templates/DetailViewUI.old.tpl" "$root_dir/Smarty/templates/DetailViewUI.tpl"
 fi
 
-if [ -f "$root_dir/themes/images/EditViewUI.old.tpl" ]; then
+if [ -f "$root_dir/Smarty/templates/EditViewUI.old.tpl" ]; then
         #rimetti l'originale
         mv "$root_dir/Smarty/templates/EditViewUI.old.tpl" "$root_dir/Smarty/templates/EditViewUI.tpl"
 fi
