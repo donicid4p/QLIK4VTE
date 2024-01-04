@@ -5,7 +5,7 @@
 
 require_once('modules/Settings/QlikIframe/core/QlikIframeInfo.php');
 
-global $app_strings, $mod_strings, $currentModule, $theme, $current_language;
+global $app_strings, $mod_strings, $currentModule, $theme, $current_language, $site_URL;
 
 $confname = vtlib_purify(trim($_REQUEST['confname']));
 
@@ -47,7 +47,7 @@ $confid = $confinfo->update($newconfinfo);
 
 //require('modules/Settings/QlikIframe/QlikIframeInfo.php');
 //header('Location: index.php?module=Settings&action=QlikIframe&parenttab=Settings&reset_session_menu=true');
-echo '<meta http-equiv="refresh" content="0;url=https://vtedemo.datasynapsi.com/index.php?module=Settings&action=QlikIframe&parenttab=Settings&reset_session_menu=true">';
+echo '<meta http-equiv="refresh" content="0;url='.$site_URL.'/index.php?module=Settings&action=QlikIframe&parenttab=Settings&reset_session_menu=true">';
 
 
 ?>
