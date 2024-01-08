@@ -45,9 +45,9 @@ $confinfo = new QlikIframeInfo(trim($_REQUEST['hidden_confname']));
 $confid = $confinfo->update($newconfinfo);
 
 
-//require('modules/Settings/QlikIframe/QlikIframeInfo.php');
-//header('Location: index.php?module=Settings&action=QlikIframe&parenttab=Settings&reset_session_menu=true');
-echo '<meta http-equiv="refresh" content="0;url='.$site_URL.'/index.php?module=Settings&action=QlikIframe&parenttab=Settings&reset_session_menu=true">';
+require('modules/Settings/QlikIframe/QlikIframeInfo.php');
+header('Location: index.php?module=Settings&action=QlikIframe&parenttab=Settings&reset_session_menu=true');
+//echo '<meta http-equiv="refresh" content="0;url='.$site_URL.'/index.php?module=Settings&action=QlikIframe&parenttab=Settings&reset_session_menu=true">';
 
 
 ?>
