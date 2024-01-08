@@ -5,7 +5,7 @@
 ## Install
 1 - Clone repository with git clone https://github.com/donicid4p/QLIK4VTE.git\
 2 - Run install.sh script\
-3 - Execute all files in qlik/install folder with php file_name.php
+3 - Execute all files in qlik/install folder with php file_name.php\
 
 ## Unistall
 1 - Execute qlik\unistall\01_Unistall.php\
